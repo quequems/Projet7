@@ -57,6 +57,8 @@ with st.spinner('initialisation...'):  # Show loading status
     def loading_data():
         df_train = pd.read_csv ("data/df_train.csv", sep=";")
         df_new = pd.read_csv ("data/df_test.csv", sep=";")
+        df_train = df_train.set_index('SK_ID_CURR')
+        df_new = df_new.set_index('SK_ID_CURR')
         # Loading dataframes df_train
         #url = "https://www.dropbox.com/s/4np9xqqh3a2mjsq/df_train.csv.zip?dl=1"
         #df_train = pd.read_csv(url,
