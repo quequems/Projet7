@@ -55,8 +55,8 @@ st.subheader("Chargement de l'application : ")
 with st.spinner('initialisation...'):  # Show loading status
     @st.cache  # caching to improve performance and save outputs
     def loading_data():
-        df_train = pd.read_csv ("data/df_train.csv")
-        df_new = pd.read_csv ("data/df_test.csv")
+        df_train = pd.read_csv ("data/df_train.csv", sep=";")
+        df_new = pd.read_csv ("data/df_test.csv", sep=";")
         # Loading dataframes df_train
         #url = "https://www.dropbox.com/s/4np9xqqh3a2mjsq/df_train.csv.zip?dl=1"
         #df_train = pd.read_csv(url,
