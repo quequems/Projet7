@@ -7,7 +7,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-import Line2D
+# import Line2D
+from matplotlib.lines import Line2D
 import pickle
 import logging
 
